@@ -1,0 +1,94 @@
+body { /* style do body*/
+    font-family: "Audiowide", sans-serif;
+    text-align: center;
+    background-image: url(./images/nawetok.jpg);
+    background-size: cover;
+    font-family: "Audiowide", sans-serif;
+    font-weight: 400;
+    font-style: normal;    
+}
+
+h1 {
+    /*color: #ACF39D;*/
+    color: #93e782;
+    font-size: 50px;
+    font-weight: 900;
+    text-shadow: black 5px 0 10px;
+}
+
+#menu {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.552);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#start_button, #sterowanie, #powrot, #guzik, #guzik_muzyka, #guzik,  #powrot{
+    font-family: "Audiowide", sans-serif;
+    display: block;
+    width: 200px;
+    margin: 10px auto;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    background: #793a80;
+    color: white;
+    border-radius: 5px;
+    border: 5px solid black;
+    font-weight: 900;
+    text-shadow: black 5px 0 10px;
+}
+
+#start_button:hover, #sterowanie:hover, #powrot:hover, #guzik:hover, #guzik_muzyka:hover {
+    background: #bb4a9a;
+}
+
+canvas {
+    border: 1px solid black;
+    display: block;
+    margin: 0 auto;
+}
+
+#container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1024px;
+    margin: 0 auto;
+}
+
+#score {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#hearts {
+    display: flex;
+    gap: 10px;
+}
+
+#serce1, #serce2, #serce3 {
+    width: 30px;
+    height: 27px;
+}
+
+p {
+    margin-top: 10px;
+    padding: 0;
+    color: white;
+    font-weight: 900;
+    font-size: 20px;
+    text-shadow: black 5px 0 10px;
+}
+
+#sterowanie_img {
+    display: block;
+    background-image: url(./images/sterowanie_inne.png);
+    margin: 0 auto;
+    width: 576px;
+    height: 576px;
+}

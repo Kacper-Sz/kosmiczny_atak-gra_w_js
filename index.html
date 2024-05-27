@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Orbitron:wght@400..900&family=Press+Start+2P&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+        <title>KOSMICZNY ATAK</title>
+        <script src="./classes/sprite.js" defer></script>
+        <script src="./classes/player.js" defer></script>
+        <script src="./classes/bullet.js" defer></script>
+        <script src="./classes/enemy.js" defer></script>
+        <script src="script.js" defer></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="menu">
+            <h1>KOSMICZNY ATAK</h1>
+            <h2>JESTES GOTOWY?</h2>
+            <button id="start_button">START</button>
+            <button id="sterowanie">STEROWANIE</button>
+            <button id="guzik_muzyka">MUZYKA I DZWIEKI W GRZE: OFF</button>
+        </div>
+
+
+        <canvas width="1024" height="576" style="display: none;"></canvas>
+        <div id="container" style="display: none;">
+            <div id="score"><p>score: </p><p id="wynik">0</p></div>
+            <div id="hearts">
+                <div id="serce1" style="background-image: url(./images/serce.png);"></div>
+                <div id="serce2" style="background-image: url(./images/serce.png);"></div>
+                <div id="serce3" style="background-image: url(./images/serce.png);"></div>
+            </div>
+        </div>
+    </body>
+</html>
