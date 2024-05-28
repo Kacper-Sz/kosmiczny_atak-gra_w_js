@@ -24,6 +24,8 @@ const serce3 = document.getElementById('serce3');
 serce1.jest = true;
 serce2.jest = true;
 serce3.jest = true;
+//zmienna potrzebna do sprawdzania czy gra sie skonczyla
+let gameOver = false;
 
 //zmienna ktora bedzie przechowywac kierunek w ktorym porusza sie postac
 let direciton = "down";
@@ -245,8 +247,8 @@ function startGame() {
 
     //nasluchiwanie klawiszy
     document.addEventListener("keydown", (e)=> {
-        //kiedy nacisniemy klawisz J to zaczne strzelac
-        if(e.code == "KeyJ") {
+        //kiedy nacisniemy klawisz J  i nie jest koniec gry to zaczne strzelac
+        if(e.code == "KeyJ" && !gameOver) {
             
             //odtwarzanie dzwieku jesli jest wlaczona muzyka
             if(music_in_game) {
@@ -460,10 +462,11 @@ function startGame() {
                     //console.log(pkt);
                     wynik.innerHTML = pkt;
                     if(music_in_game) {
-                        music_game.pause();
                         hit.play();
+                        music_game.pause();
                     }
                     //jezeli postac straci wszystkie zycia to koniec gry
+                    gameOver = true
                     canvas.remove();
                     container.remove();
                     //tworze elementy html - ustawiam im odpowiednie style i dodaje je do body
