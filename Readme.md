@@ -6,7 +6,7 @@ Witamy w grze **Kosmiczny Atak**! Poniżej znajdziesz krótki opis gry, przykła
 
 **Kosmiczny Atak** to prosta, dynamiczna gra, w której gracz wciela się w obrońcę kosmicznego statku. Twoim zadaniem jest eliminacja kosmitów, którzy próbują dostać się na statek, żeby przerwać Twoją mijsę. Musisz być szybki i precyzyjny, aby zneutralizować zagrożenie i chronić statek przed najeźdźcami.
 
-## Przykład użycia wraz z rzutami ekranu działania gry
+## Przykład użycia wraz z zrzutami ekranu działania gry
 
 ### Ekran startowy
 ![Ekran startowy](./images/zrzuty_ekranu/menu.png)
